@@ -8,27 +8,66 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Заголовок -->
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
+        android:id="@+id/textTitle"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Добро пожаловать!"
-        android:textSize="28sp"
-        android:textStyle="bold"
+        android:text="IdeaBoard"
+        android:textSize="52sp"
+        android:gravity="center"
+        style="@style/TextAppearance.IdeaBoard.Bold"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/btnRegister"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="150dp"/>
 
-    <Button
-        android:id="@+id/btnRegister"
-        android:layout_width="200dp"
+    <!-- Описание -->
+    <TextView
+        android:id="@+id/textDescription"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
-        app:layout_constraintTop_toBottomOf="@id/textView"
+        android:text="Платформа для обмена идеями:\nдобавляйте свои идеи, просматривайте чужие и вдохновляйтесь!"
+        android:textSize="19sp"
+        style="@style/TextAppearance.IdeaBoard.Regular"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp"/>
+        android:layout_marginTop="20dp"
+        android:lineSpacingExtra="4dp"/>
+
+    <!-- Кнопка Регистрация -->
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Регистрация"
+        app:layout_constraintTop_toBottomOf="@id/textDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="40dp"/>
+
+    <!-- Кнопка Вход -->
+    <Button
+        android:id="@+id/btnEntry"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Вход"
+        app:layout_constraintTop_toBottomOf="@id/btnRegister"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Кнопка Смотреть ленту -->
+    <Button
+        android:id="@+id/btnLine"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Смотреть ленту"
+        app:layout_constraintTop_toBottomOf="@id/btnEntry"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

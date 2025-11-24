@@ -5,10 +5,10 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.appbar.MaterialToolbar
 
-class RegisterActivity : AppCompatActivity() {
+class EntryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_register)
+        setContentView(R.layout.activity_entry)
 
         val toolbar = findViewById<MaterialToolbar>(R.id.topAppBar)
         toolbar.setNavigationOnClickListener {

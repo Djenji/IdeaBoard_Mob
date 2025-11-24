@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.IdeaBoard_Mob">
         <activity
+            android:name=".LineActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EntryActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegisterActivity"
             android:exported="false" />
         <activity
