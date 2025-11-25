@@ -8,66 +8,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- Фон -->
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bg_main"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
     <!-- Заголовок -->
     <TextView
         android:id="@+id/textTitle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="IdeaBoard"
-        android:textSize="52sp"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
         android:gravity="center"
         style="@style/TextAppearance.IdeaBoard.Bold"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="150dp"/>
+        android:layout_marginTop="131dp"/>
 
     <!-- Описание -->
     <TextView
         android:id="@+id/textDescription"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="Платформа для обмена идеями:\nдобавляйте свои идеи, просматривайте чужие и вдохновляйтесь!"
-        android:textSize="19sp"
         style="@style/TextAppearance.IdeaBoard.Regular"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/textTitle"
-        app:layout_constraintStart_toStartOf="parent"
+        android:lineSpacingExtra="4dp"
+        android:text="Платформа для обмена идеями:\nдобавляйте свои идеи, просматривайте чужие и вдохновляйтесь!"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"
-        android:lineSpacingExtra="4dp"/>
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitle" />
 
     <!-- Кнопка Регистрация -->
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="240dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
-        app:layout_constraintTop_toBottomOf="@id/textDescription"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="@android:color/white"
+        android:text="РЕГИСТРАЦИЯ"
+        android:textSize="19sp"
+        style="@style/TextAppearance.IdeaBoard.Bold"
+        android:textColor="@android:color/black"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"/>
+        app:layout_constraintHorizontal_bias="0.500"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescription" />
 
     <!-- Кнопка Вход -->
     <Button
         android:id="@+id/btnEntry"
-        android:layout_width="240dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Вход"
+        android:text="ВХОД"
+        android:textSize="19sp"
+        style="@style/TextAppearance.IdeaBoard.Bold"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/btnRegister"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="52dp"/>
 
     <!-- Кнопка Смотреть ленту -->
     <Button
         android:id="@+id/btnLine"
-        android:layout_width="240dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Смотреть ленту"
+        android:text="СМОТРЕТЬ ЛЕНТУ"
+        android:textSize="19sp"
+        style="@style/TextAppearance.IdeaBoard.Bold"
+        android:textColor="@android:color/black"
+        android:backgroundTint="@android:color/white"
         app:layout_constraintTop_toBottomOf="@id/btnEntry"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="52dp"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
